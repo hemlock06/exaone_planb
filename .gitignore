@@ -18,3 +18,11 @@ venv/
 submit/
 submit.zip
 
+
+# local submit artifacts
+submit.zip
+submit.zip.sha256
+exaone_phase2/results/artifact_g64_*
+exaone_phase2/results/quant_g64_*
+exaone_phase2/results/artifact_w4a16_g64_size.txt
+
