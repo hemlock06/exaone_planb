@@ -13,3 +13,8 @@ data/*.bak
 # local python env (windows)
 venv/
 .venv/
+
+# submission artifacts (DO NOT COMMIT)
+submit/
+submit.zip
+

@@ -1,0 +1,26 @@
+﻿=== submit.zip manifest (bnb4 submit package) ===
+Created: 2026-02-22 14:20:18
+ZipPath: .\submit.zip
+ZipSizeBytes: 2050541392
+ZipSizeGiB: 1.90971548855305
+SHA256: 50C0AF200C2B3D8D3DBDF7D3F46E403DBB4A2A54AF8CD4B36C5AB625F518DB86
+
+--- 7z test ---
+
+7-Zip 26.00 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-02-12
+
+Scanning the drive for archives:
+1 file, 2050541392 bytes (1956 MiB)
+
+Testing archive: .\submit.zip
+--
+Path = .\submit.zip
+Type = zip
+Physical Size = 2050541392
+
+Everything is Ok
+
+Folders: 2
+Files: 13
+Size:       2570269094
+Compressed: 2050541392
