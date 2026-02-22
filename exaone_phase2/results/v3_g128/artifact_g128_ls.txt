@@ -1,0 +1,11 @@
+total 1.4G
+-rw-r--r-- 1 root root 5.4K Feb 22 16:08 chat_template.jinja
+-rw-r--r-- 1 root root 2.4K Feb 22 16:08 config.json
+-rw-r--r-- 1 root root  134 Feb 22 16:08 generation_config.json
+-rw-r--r-- 1 root root 1.2M Feb 22 16:08 merges.txt
+-rw-r--r-- 1 root root 1.3G Feb 22 16:08 model.safetensors
+-rw-r--r-- 1 root root  224 Feb 22 16:08 recipe.yaml
+-rw-r--r-- 1 root root 6.6K Feb 22 16:08 special_tokens_map.json
+-rw-r--r-- 1 root root 7.6M Feb 22 16:08 tokenizer.json
+-rw-r--r-- 1 root root  69K Feb 22 16:08 tokenizer_config.json
+-rw-r--r-- 1 root root 1.9M Feb 22 16:08 vocab.json
