@@ -1,4 +1,5 @@
-﻿# PROJECT_STATUS
+﻿# NOTE: Phase2 README is tracked in exaone_phase2/README.md (added in commit 73b598c)
+# PROJECT_STATUS
 
 ## Phase2 - Current status
 ### Done
@@ -31,3 +32,4 @@
 ## Rules
 - DO NOT COMMIT: submit/, submit.zip, large artifacts, local venv
 - Always store result logs under: exaone_phase2/results/
+
