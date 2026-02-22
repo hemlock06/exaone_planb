@@ -1,0 +1,36 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environment
+venv/
+.venv/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+*.tmp
+*.bak
+
+# Large artifacts / backups
+*.zip
+
+# Training outputs (if you make later)
+outputs/
+checkpoints/
+runs/
+
+# Model weights (optional to ignore)
+*.pt
+*.bin
+*.safetensors
