@@ -1,0 +1,6 @@
+﻿# v3 (W4A16-G128) leaderboard score
+- submit_id: 20395
+- submitted_at: 2026-02-22 16:16:28 (KST)
+- score: 0.5866725231
+- elapsed: 10m14s
+- submit_sha256 (v3): c2147ec9e7b44b75ca5cc389d18d3c6e4fdad57367432a542f54cf8252cd29f6
