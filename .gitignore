@@ -1,36 +1,8 @@
-﻿# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.pytest_cache/
-.mypy_cache/
-
-# Virtual environment
-venv/
-.venv/
-
-# Jupyter / notebooks
-.ipynb_checkpoints/
-
-# OS / editor
-.DS_Store
-Thumbs.db
-
-# Logs / temp
-*.log
-*.tmp
-*.bak
-
-# Large artifacts / backups
-*.zip
-
-# Training outputs (if you make later)
-outputs/
-checkpoints/
-runs/
-
-# Model weights (optional to ignore)
-*.pt
-*.bin
-*.safetensors
+﻿# local experiments
+baseline_speed_test.py
+gptq_quantize.py
+int8_model_save.py
+int8_speed_test.py
+model_load_test.py
+vllm_speed_test.py
+exaone_1_2b_int8/
