@@ -6,3 +6,10 @@ int8_speed_test.py
 model_load_test.py
 vllm_speed_test.py
 exaone_1_2b_int8/
+# backups / artifacts
+data/*.bak
+*.zip
+
+# local python env (windows)
+venv/
+.venv/
