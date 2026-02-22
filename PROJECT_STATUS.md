@@ -1,44 +1,33 @@
-﻿# exaone_planb 진행상황
+﻿# PROJECT_STATUS
 
-## 완료
-- dataset pipeline scripts 01~11 작성/실행
-- 품질 점검 완료 (05, 07, 08, 09 통과)
-- final_dataset 최신본 갱신 완료
-- SHA256SUMS.txt 생성 완료
-- Git 초기화 / 첫 커밋 / main 브랜치 / GitHub push 완료
+## Phase2 - Current status
+### Done
+- vLLM serving bench logs saved (bnb4 test path):
+  - exaone_phase2/results/bench_bnb4_256_128_c8.txt
+  - exaone_phase2/results/bench_bnb4_256_128_c16.txt
+  - exaone_phase2/results/bench_bnb4_256_128_c32.txt
+  - exaone_phase2/results/summary_bnb4.txt
+  - exaone_phase2/results/env_versions_bnb4.txt
+- submit.zip packaging pipeline validated:
+  - 7z t OK
+  - sha256 manifest saved: exaone_phase2/results/submit_manifest_bnb4.txt
+- submission log maintained:
+  - exaone_phase2/results/submission_log.md
 
-## 최종 산출물 (final_dataset)
-- train_with_response.jsonl (54)
-- valid_with_response.jsonl (5)
-- train_chat.jsonl (54)
-- valid_chat.jsonl (5)
-- SHA256SUMS.txt
+### Latest leaderboard snapshot (manual)
+- 2026-02-22
+  - 1st submit: score=0.5060308894, time=12m39s
+  - 2nd submit: score=0.4993294423, time=13m19s
 
-## 환경
-- OS: Windows (PowerShell)
-- Python: 3.11.9 (venv)
-- GPU: RTX 3060 12GB
-- 주요 패키지:
-  - torch 2.10.0
-  - transformers 5.2.0
-  - datasets 4.5.0
-  - peft 0.18.1
-  - accelerate 1.12.0
-  - trl 0.28.0
+## Next actions (recommended)
+1) Establish **baseline accuracy vs latency** reference (official eval-like run if possible)
+2) Try real compression that affects weights/config:
+   - GPTQ/AWQ (if allowed, must export HF weights)
+   - INT8/FP8 (if compatible with vLLM 0.14.1 evaluation env)
+   - Structured pruning / KV-cache optimizations are Phase3 (vLLM change allowed) -> not for Phase2
+3) Validate compatibility with eval server constraints:
+   - vLLM 0.14.1, torch 2.9.0+cu128, python 3.11.14, no internet
 
-## 최근 커밋
-- e3678dd - Finalize dataset and quality-check pipeline outputs
-
-## 다음 할 일 (Next Steps)
-1. 학습 방식 결정 (예: LoRA / QLoRA)
-2. 학습 스크립트 작성 (예: train_lora.py)
-3. 데이터 로딩/포맷 검증 (dry run)
-4. 소규모 학습 테스트
-5. 추론 테스트 스크립트 작성
-6. 결과 평가 기준 정리
-7. 실험 로그/체크포인트 관리 규칙 정리
-
-## 세션 재개용 메모 (ChatGPT 핸드오프용)
-- 현재 상태: 데이터셋 준비 완료 + GitHub 업로드 완료
-- 요청 방식: 문외한도 따라할 수 있게 step-by-step, PowerShell 복붙용 명령어 중심
-- 다음 목표: (여기에 직접 적기)
+## Rules
+- DO NOT COMMIT: submit/, submit.zip, large artifacts, local venv
+- Always store result logs under: exaone_phase2/results/
