@@ -1,0 +1,81 @@
+
+## bench_bnb4_256_128_c8.txt
+============ Serving Benchmark Result ============
+Successful requests:                     200       
+Failed requests:                         0         
+Maximum request concurrency:             8         
+Benchmark duration (s):                  83.64     
+Total input tokens:                      51200     
+Total generated tokens:                  25600     
+Request throughput (req/s):              2.39      
+Output token throughput (tok/s):         306.09    
+Peak output token throughput (tok/s):    368.00    
+Peak concurrent requests:                16.00     
+Total token throughput (tok/s):          918.26    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          333.74    
+Median TTFT (ms):                        340.91    
+P99 TTFT (ms):                           493.11    
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          23.71     
+Median TPOT (ms):                        23.40     
+P99 TPOT (ms):                           31.92     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           23.71     
+Median ITL (ms):                         22.42     
+P99 ITL (ms):                            40.83     
+==================================================
+
+## bench_bnb4_256_128_c16.txt
+============ Serving Benchmark Result ============
+Successful requests:                     200       
+Failed requests:                         0         
+Maximum request concurrency:             16        
+Benchmark duration (s):                  42.65     
+Total input tokens:                      51200     
+Total generated tokens:                  25600     
+Request throughput (req/s):              4.69      
+Output token throughput (tok/s):         600.23    
+Peak output token throughput (tok/s):    704.00    
+Peak concurrent requests:                32.00     
+Total token throughput (tok/s):          1800.69   
+---------------Time to First Token----------------
+Mean TTFT (ms):                          186.03    
+Median TTFT (ms):                        191.13    
+P99 TTFT (ms):                           269.56    
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          24.36     
+Median TPOT (ms):                        24.01     
+P99 TPOT (ms):                           26.29     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           24.36     
+Median ITL (ms):                         23.71     
+P99 ITL (ms):                            36.48     
+==================================================
+
+## bench_bnb4_256_128_c32.txt
+============ Serving Benchmark Result ============
+Successful requests:                     200       
+Failed requests:                         0         
+Maximum request concurrency:             32        
+Benchmark duration (s):                  26.78     
+Total input tokens:                      51200     
+Total generated tokens:                  25600     
+Request throughput (req/s):              7.47      
+Output token throughput (tok/s):         955.84    
+Peak output token throughput (tok/s):    1152.00   
+Peak concurrent requests:                64.00     
+Total token throughput (tok/s):          2867.53   
+---------------Time to First Token----------------
+Mean TTFT (ms):                          249.58    
+Median TTFT (ms):                        253.67    
+P99 TTFT (ms):                           311.24    
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          28.98     
+Median TPOT (ms):                        28.89     
+P99 TPOT (ms):                           30.64     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           28.98     
+Median ITL (ms):                         28.09     
+P99 ITL (ms):                            45.94     
+==================================================
