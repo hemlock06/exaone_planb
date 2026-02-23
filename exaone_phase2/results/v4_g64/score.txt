@@ -1,0 +1,5 @@
+submitted_at(KST): 2026-02-23 16:11:33 KST
+submit_id: 21114
+score: 0.4504397326
+elapsed: 13분 33초
+sha256(submit_v4.zip): e201383336cd3d98fd60ae9aa36072c61d8f88805f6c03b53eacb657b407c2d9

@@ -1,0 +1,30 @@
+-rwxrwxrwx 1 root root 1.1G Feb 22 17:33 /mnt/c/exaone_planb/submit_v4.zip
+-rwxrwxrwx 1 root root   80 Feb 23 16:04 /mnt/c/exaone_planb/submit_v4.zip.sha256
+e201383336cd3d98fd60ae9aa36072c61d8f88805f6c03b53eacb657b407c2d9  /mnt/c/exaone_planb/submit_v4.zip
+Archive:  /mnt/c/exaone_planb/submit_v4.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2026-02-22 14:57   model/
+     5487  2026-02-22 17:28   model/chat_template.jinja
+     2396  2026-02-22 17:28   model/config.json
+      134  2026-02-22 17:28   model/generation_config.json
+  1219196  2026-02-22 17:28   model/merges.txt
+1390692192  2026-02-22 17:28   model/model.safetensors
+      223  2026-02-22 17:28   model/recipe.yaml
+     6704  2026-02-22 17:28   model/special_tokens_map.json
+  7909331  2026-02-22 17:28   model/tokenizer.json
+    70315  2026-02-22 17:28   model/tokenizer_config.json
+  1934190  2026-02-22 17:28   model/vocab.json
+---------                     -------
+1401840168                     11 files
+--- recipe.yaml ---
+default_stage:
+  default_modifiers:
+    GPTQModifier:
+      targets: [Linear]
+      ignore: [lm_head]
+      scheme: W4A16
+      block_size: 64
+      dampening_frac: 0.01
+      actorder: static
+      offload_hessians: false
