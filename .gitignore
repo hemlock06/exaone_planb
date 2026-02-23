@@ -26,3 +26,8 @@ exaone_phase2/results/artifact_g64_*
 exaone_phase2/results/quant_g64_*
 exaone_phase2/results/artifact_w4a16_g64_size.txt
 
+
+# local submit artifacts
+submit_v4.zip*
+submit_v4_result.txt
+submit_v4_upload_prep.txt
